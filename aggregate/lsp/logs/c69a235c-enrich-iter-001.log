@@ -1,0 +1,31 @@
+[2026-11-22T11:38:32Z] === ENRICH ITERATION 1 START | repo=RustCrypto/block-ciphers sha=c69a235c ===
+[2026-11-22T11:38:32Z] [iter=1] PHASE START: enrich repo=RustCrypto/block-ciphers sha=c69a235c runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/c69a235c-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/c69a235c1289b8743aa66db6e6ed1bdfcf1e956d.nq.gz
+[2026-11-22T11:38:32Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-22T11:38:41Z] [iter=1] AST store loaded triples=724443 load_secs=9 mem_mb=804 MB
+[2026-11-22T11:38:41Z] [iter=1] Step 2: Finding LSP targets mem_mb=804 MB
+[2026-11-22T11:38:42Z] [iter=1] LSP targets found call_sites=4659 imports=111 extends=0 implements=363 secs=1
+[2026-11-22T11:38:42Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=804 MB
+[2026-11-22T11:38:45Z] [iter=1] Position index built positions=44236 nodes_with_types=52017 secs=3 mem_mb=804 MB
+[2026-11-22T11:38:45Z] [iter=1] Step 3: Starting LSP resolution mem_mb=804 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T11:38:45Z] [iter=1] Resolving target type target_type=call_site count=4659
+[2026-11-22T11:39:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=2 resolved=66 errors=0 current=belt-block/src/lib.rs
+[2026-11-22T11:39:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=9 resolved=424 errors=0 current=aes/src/soft/fixslice64.rs
+[2026-11-22T11:40:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.0 files_done=10 resolved=723 errors=0 current=gift-cipher/src/primitives.rs
+[2026-11-22T11:41:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=14 resolved=970 errors=0 current=twofish/src/lib.rs
+[2026-11-22T11:41:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.1 files_done=19 resolved=1310 errors=0 current=camellia/src/camellia256.rs
+[2026-11-22T11:42:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.6 files_done=26 resolved=1587 errors=0 current=aes/src/armv8/hazmat.rs
+[2026-11-22T11:43:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.7 files_done=35 resolved=1940 errors=0 current=cast6/tests/mod.rs
+[2026-11-22T11:43:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.2 files_done=54 resolved=2352 errors=0 current=aes/src/armv8/encdec.rs
+[2026-11-22T11:44:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.8 files_done=69 resolved=2656 errors=0 current=kuznyechik/src/lib.rs
+[2026-11-22T11:44:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.3 files_done=92 resolved=2876 errors=0 current=twofish/tests/mod.rs
+[2026-11-22T11:45:16Z] [iter=1] Target type resolved target_type=call_site resolved=2969 errors=0 secs=391 mem_mb=804 MB
+[2026-11-22T11:45:16Z] [iter=1] Resolving target type target_type=import_statement count=111
+[2026-11-22T11:45:21Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=6.8 files_done=1 resolved=2 errors=0 current=aes/src/x86/vaes256/encdec.rs
+[2026-11-22T11:45:52Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=7.3 files_done=34 resolved=55 errors=0 current=twofish/src/lib.rs
+[2026-11-22T11:46:16Z] [iter=1] Target type resolved target_type=import_statement resolved=99 errors=0 secs=59 mem_mb=804 MB
+[2026-11-22T11:46:16Z] [iter=1] Resolving target type target_type=implements_clause count=363
+[2026-11-22T11:46:36Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=8.1 files_done=2 resolved=180 errors=0 current=blowfish/src/lib.rs
+[2026-11-22T11:46:43Z] [iter=1] Target type resolved target_type=implements_clause resolved=245 errors=0 secs=28 mem_mb=804 MB
+[2026-11-22T11:51:13Z] [iter=1] Step 5: Writing final enrichment file triples=39555
+[2026-11-22T11:51:14Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/c69a235c1289b8743aa66db6e6ed1bdfcf1e956d.nq.gz size_kb=805
+[2026-11-22T11:51:14Z] [iter=1] PHASE END: enrich elapsed_s=762 elapsed_min=12.7 total_triples=39555
