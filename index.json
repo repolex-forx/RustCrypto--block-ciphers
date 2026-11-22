@@ -1,0 +1,11 @@
+{
+  "org": "RustCrypto",
+  "repo": "block-ciphers",
+  "versions": [
+    {
+      "commit": "c69a235c1289b8743aa66db6e6ed1bdfcf1e956d",
+      "tag": "xtea-v0.1.0",
+      "parsed_at": "2026-11-22T11:53:02.629309+00:00"
+    }
+  ]
+}
