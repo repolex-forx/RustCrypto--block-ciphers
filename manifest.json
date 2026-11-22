@@ -409,7 +409,9 @@
           "source": "lsp",
           "install_path": "/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cpubits-0.1.0/src/lib.rs"
         }
-      ]
+      ],
+      "repolex": "aggregate/repolex/c69a235c1289b8743aa66db6e6ed1bdfcf1e956d/chunk-001.nq.gz",
+      "dep": "dep/c69a235c1289b8743aa66db6e6ed1bdfcf1e956d.nq.gz"
     }
   ],
   "commit": "commit/commit.nq.gz",
